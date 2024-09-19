@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --rosinha:#ffcfcf;
+    --verdeagua: #93ffc5;
+    --azulescuro: #3e4664;
+
+    --fonte-padrao: 'Poppins', sans-serif;
+    --fonte-destaque: 'Concert One', sans-serif;
+}
+
+body{
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO HEADER */
+
+header{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 3px 10px #0000001c;
+    position: fixed;
+    z-index: 10;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    padding: 10px 30px;
+}
+
+header a{
+    color: var(--azulescuro);
+    text-decoration: none;
+    transition: .2s;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+header a:hover{
+    transform: scale(1.05);
+    background-color: var(--verdeagua);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.drop-hover{
+    position: relative;
+    height: fit-content;
+}
+
+.drop-hover .drop{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(182, 255, 227, 0.74);
+    /* width: 70%; */
+    display: none;
+}
+
+.drop-hover:hover .drop {
+    width: 90%;
+    display: flex;
+}
+
+.drop-hover .drop a{
+    padding: 10px;
+    text-align: center;
+}
+
+drop-hover:hover .drop{
+    height: 300px;
+}
+
+main{
+    min-width: 100px;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ESTILO DO TOPO */
+
+section.topo{
+    display: flex;
+    margin: 100px 0px 50px 0px;
+    justify-content: center;
+}
+
+/* ESTILO MIDDLE */
+
+section.middle{
+    padding: 100px 170px 4%;
+    margin-top: 80px;
+    background-color: var(--rosinha);
+}
+
+section.middle div.flex{
+    display: flex;
+    gap: 100px;
+    justify-content: baseline;
+}
+
+section.middle .categorias .gambiarra{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* section.middle .categorias .gambiarra img{
+    max-height: 40%;
+} */
+
+section.middle h2{
+    font-family: var(--fonte-destaque);
+    color: var(--azulescuro);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+section.middle p{
+    color: var(--azulescuro);
+    padding-top: 40px;
+}
+
+/* ESTILO PRODUTOS */
+
+section.produtos{
+    padding: 100px 170px 4%;
+    padding-bottom: 250px;
+    margin-top: 150px;
+}
+
+section.produtos div.flex{
+    display: flex;
+    gap: 90px;
+}
+
+section.produtos h2{
+    font-family: var(--fonte-destaque);
+    color: var(--azulescuro);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+section.produtos p{
+    color: var(--azulescuro);
+    padding-top: 40px;
+}
+
+/* ESTILO CARROSSEL */
+
+
+
+/* ESTILO SOBRE */
+
+section.sobre{
+    padding: 130px 170px 4%;
+    margin-top: 50px;
+    background-color: var(--rosinha);
+}
+
+.flextext {
+    display: flex;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ESTILO FOOTER */
+
